@@ -1,0 +1,19 @@
+
+[macd]
+short = 12
+long = 26
+signal = 9
+
+[macdThresholds]
+windowSize = 10
+
+[rsiPositive]
+interval = 10
+
+[rsiNegative]
+interval = 6
+
+[rsiThresholds]
+low = 20
+high = 75
+persistence = 1
