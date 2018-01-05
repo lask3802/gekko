@@ -1,6 +1,14 @@
-var talib = require("talib");
 var semver = require("semver");
 var _ = require('lodash');
+
+// validate that talib is installed, if not we'll throw an excepion which will
+// prevent further loading or out outside this module
+try {
+    var talib = require("talib");
+} catch (e) {
+    module.exports = null;
+    return;
+}
 
 var talibError = 'Gekko was unable to configure talib indicator:\n\t';
 var talibGTEv103 = semver.gte(talib.version, '1.0.3');
@@ -588,7 +596,7 @@ methods.macdext = {
 }
 
 methods.macdfix = {
-    requires: ['SignalPeriod'],
+    requires: ['optInSignalPeriod'],
     create: (params) => {
         verifyParams('macdfix', params);
 
@@ -1273,7 +1281,7 @@ methods.typprice = {
 }
 
 methods.ultosc = {
-    requires: ['optInTimePeriod'],
+    requires: ['optInTimePeriod1', 'optInTimePeriod2', 'optInTimePeriod3'],
     create: (params) => {
         verifyParams('ultosc', params);
 
@@ -1285,7 +1293,7 @@ methods.ultosc = {
             startIdx: 0,
             endIdx: data.high.length - 1,
             optInTimePeriod1: params.optInTimePeriod1,
-            optInTimePeriod2: params.params.optInTimePeriod1,
+            optInTimePeriod2: params.optInTimePeriod2,
             optInTimePeriod3: params.optInTimePeriod3
         });
     }

@@ -14,10 +14,6 @@ config.debug = true;
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 config.tradingAdvisor = {
-  talib: {
-    enabled: require('../supportsTalib'),
-    version: '1.0.2'
-  }
 }
 
 config.candleWriter = {
@@ -37,10 +33,9 @@ config.adapter = UIconfig.adapter;
 
 config.sqlite = {
   path: 'plugins/sqlite',
-
-  dataDirectory: 'history',
   version: 0.1,
-
+  dataDirectory: 'history',
+  journalMode: require('../isWindows.js') ? 'PERSIST' : 'WAL',
   dependencies: [{
     module: 'sqlite3',
     version: '3.1.4'
@@ -53,6 +48,7 @@ config.postgresql = {
   version: 0.1,
   connectionString: 'postgres://user:pass@localhost:5432', // if default port
   database: null, // if set, we'll put all tables into a single database.
+  schema: 'public',
   dependencies: [{
     module: 'pg',
     version: '6.1.0'

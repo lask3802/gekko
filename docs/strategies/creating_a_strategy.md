@@ -35,6 +35,15 @@ A strategy is a combination of functions that get market data in the form of can
       // your code!
     }
 
+    // Optional for executing code
+    // after completion of a backtest.
+    // This block will not execute in
+    // live use as a live gekko is
+    // never ending.
+    strat.end = function() {
+      // your code!
+    }
+
     module.exports = strat;
 
 In the boilerplate we define four functions you have to write yourself. The functions are executed like so:
@@ -110,7 +119,7 @@ This a basic strategy example that buys and sells BTC/USDT when it hits a specif
     // Based on the newly calculated
     // information, check if we should
     // update or not.
-    strat.check = function() {
+    strat.check = function(candle) {
         // buy when it hits buy price
         if(candle.close <= this.buyPrice) {
             this.advice("long");
@@ -158,6 +167,11 @@ or
     // add a TA-lib indicator
     this.addTalibIndicator('name', 'type', parameters);
 
+or
+
+    // add a Tulip indicator
+    this.addTulipIndicator('name', 'type', parameters);
+
 The first parameter is the name, the second is the indicator type you want and the third is an object with all indicator parameters. If you want an MACD indicator you can do it like so:
 
 In your init method:
@@ -168,13 +182,19 @@ In your init method:
 
     // add a TA-lib indicator
     var parameters = {optInFastPeriod: 10, optInSlowPeriod: 21, optInSignalPeriod: 9};
-    this.addIndicator('mytalibmacd', 'MACD', parameters);
+    this.addTalibIndicator('mytalibmacd', 'macd', parameters);
+
+    // add a Tulip indicator
+    var parameters = {optInFastPeriod: 10, optInSlowPeriod: 21, optInSignalPeriod: 9};
+    this.addTulipIndicator('mytulipmacd', 'macd', parameters);
 
 In your check or update method:
 
     var result = this.indicators.mytalibmacd.result;
 
-See the [TA-lib indicators](https://github.com/askmike/gekko/blob/stable/docs/trading_bot/talib_indicators.md) document for a list of all suppported TA-lib indicators and there required parameters.
+See the [TA-lib indicators](https://github.com/askmike/gekko/blob/stable/docs/trading_bot/talib_indicators.md) document for a list of all suppported TA-lib indicators and their required parameters.
+
+See the [Tulip indicators](https://github.com/askmike/gekko/blob/stable/docs/trading_bot/tulip_indicators.md) document for a list of all supported Tulip indicators and their required parameters.
 
 ### Configurables
 
@@ -187,12 +207,10 @@ You can create configurable parameters for your method which allows you to adjus
 
 And in your method you can use them again (for example to pass to an indicator):
 
-    // in the init:
-    var config = require('../core/util.js').getConfig();
-    this.settings = config.custom;
-
     // anywhere in your code:
     this.settings.my_custom_setting; // is now 10
+
+___The name of your configuration must be the same as the name of the strategy___
 
 ### Tool libraries
 

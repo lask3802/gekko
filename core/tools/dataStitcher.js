@@ -53,7 +53,7 @@ Stitcher.prototype.prepareHistoricalData = function(done) {
   );
 
   var endTime = moment().utc().startOf('minute');
-  var idealStartTime = endTime.clone().subtract('m', requiredHistory);
+  var idealStartTime = endTime.clone().subtract(requiredHistory, 'm');
 
   this.reader.mostRecentWindow(idealStartTime, endTime, function(localData) {
     // now we know what data is locally available, what
@@ -177,10 +177,14 @@ Stitcher.prototype.checkExchangeTrades = function(since, next) {
   var provider = config.watch.exchange.toLowerCase();
   var DataProvider = require(util.dirs().gekko + 'exchanges/' + provider);
 
-  var exchangeChecker = require(util.dirs().core + 'exchangeChecker');
-  var exchangeSettings = exchangeChecker.settings(config.watch)
+  var exchangeConfig = config.watch;
+  
+  // include trader config if trading is enabled
+  if (_.isObject(config.trader) && config.trader.enabled) {
+    exchangeConfig = _.extend(config.watch, config.trader);
+  }
 
-  var watcher = new DataProvider(config.watch);
+  var watcher = new DataProvider(exchangeConfig);
 
   watcher.getTrades(since, function(e, d) {
     if(_.isEmpty(d))
