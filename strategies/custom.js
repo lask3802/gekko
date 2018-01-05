@@ -1,62 +1,79 @@
-// This is a basic example strategy for Gekko.
-// For more information on everything please refer
-// to this document:
+// If you want to use your own trading methods you can
+// write them here. For more information on everything you
+// can use please refer to this document:
 //
-// https://gekko.wizb.it/docs/strategies/creating_a_strategy.html
-//
-// The example below is pretty bad investment advice: on every new candle there is
-// a 10% chance it will recommend to change your position (to either
-// long or short).
+// https://github.com/askmike/gekko/blob/stable/docs/trading_methods.md
 
-var log = require('../core/log');
+var config = require('../core/util.js').getConfig();
+var settings = config['talib-macd'];
 
-// Let's create our own strat
-var strat = {};
+// Let's create our own method
+var method = {};
 
 // Prepare everything our method needs
-strat.init = function() {
-  this.currentTrend = 'long';
-  this.requiredHistory = 0;
+method.init = function() {
+  this.name = 'talib-macd'
+  // keep state about the current trend
+  // here, on every new candle we use this
+  // state object to check if we need to
+  // report it.
+  this.trend = 'none';
+
+  // how many candles do we need as a base
+  // before we can start giving advice?
+  this.requiredHistory = config.tradingAdvisor.historySize;
+
+  var customMACDSettings = settings.parameters;
+  this.mcadq = [];
+
+  // define the indicators we need
+  this.addTalibIndicator('mymacd', 'macd', customMACDSettings);
 }
 
 // What happens on every new candle?
-strat.update = function(candle) {
-
-  // Get a random number between 0 and 1.
-  this.randomNumber = Math.random();
-
-  // There is a 10% chance it is smaller than 0.1
-  this.toUpdate = this.randomNumber < 0.1;
+method.update = function(candle) {
+  // nothing!
 }
 
-// For debugging purposes.
-strat.log = function() {
-  log.debug('calculated random number:');
-  log.debug('\t', this.randomNumber.toFixed(3));
+
+method.log = function() {
+  // nothing!
 }
 
 // Based on the newly calculated
 // information, check if we should
 // update or not.
-strat.check = function() {
+method.check = function(candle) {
+  var price = candle.close;
+  var result = this.talibIndicators.mymacd.result;
+  var macddiff = result['outMACD'] - result['outMACDSignal'];
 
-  // Only continue if we have a new update.
-  if(!this.toUpdate)
+  var macdq = this.macdq;
+  //not enough data, no trend
+  if(macdq.length < 3){
+    this.advice();
     return;
+  }
 
-  if(this.currentTrend === 'long') {
+  // Will we going up?
+  if(this.trend !== "up" && macddiff > 0){
 
-    // If it was long, set it to short
-    this.currentTrend = 'short';
-    this.advice('short');
+  }
 
-  } else {
+  // Will we going down?
+  if(this.trend !== "down" && macddiff < 0){
 
-    // If it was short, set it to long
-    this.currentTrend = 'long';
-    this.advice('long');
+  }
 
+  this.macdq.push(macddiff);
+  if(this.mcadq.length>5) {
+    this.mcadq.shift();
   }
 }
 
-module.exports = strat;
+function isPositiveMountain(macdq){
+    for(var idx = macdq.length-1; idx >=0 ; )
+
+}
+
+module.exports = method;
