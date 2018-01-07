@@ -1,11 +1,13 @@
 
 [macd]
-short = 12
-long = 26
-signal = 9
+optInFastPeriod = 12
+optInSlowPeriod = 26
+optInSignalPeriod = 9
+
 
 [macdThresholds]
 windowSize = 10
+persistence = 1
 
 [rsiPositive]
 interval = 10

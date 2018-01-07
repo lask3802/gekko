@@ -1,0 +1,17 @@
+
+[kdj]
+optInFastK_Period = 9
+optInFastD_Period = 3
+optInFastD_MAType = 1
+
+
+[thresholds]
+high = 0
+low = 100
+persistence = 3
+margin = 3
+
+#ok( $TA_MAType_SMA, 0 );
+#51	ok( $TA_MAType_EMA, 1 );
+#52	ok( $TA_MAType_WMA, 2 );
+#53	ok( $TA_MAType_DEMA, 3 );
