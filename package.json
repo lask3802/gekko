@@ -29,6 +29,7 @@
     "co-fs": "^1.2.0",
     "coinfalcon": "^1.0.3",
     "commander": "^2.9.0",
+    "dct": "0.0.3",
     "gdax": "^0.4.2",
     "gekko": "0.0.9",
     "gemini-exchange-coffee-api": "2.0.6",
@@ -57,9 +58,11 @@
     "semver": "5.4.1",
     "sqlite3": "^3.1.13",
     "stats-lite": "^2.0.4",
+    "talib": "^1.0.3",
     "tiny-promisify": "^0.1.1",
     "toml": "^2.3.0",
     "twitter": "^1.7.1",
+    "vue-cli": "^2.9.2",
     "zaif.jp": "^0.1.4"
   },
   "devDependencies": {

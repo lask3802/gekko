@@ -10,7 +10,7 @@ var _ = require('lodash');
 var log = require('../core/log.js');
 
 var RSI = require('./indicators/RSI.js');
-
+var idct = require('./math/idct.js');
 // let's create our own method
 var method = {};
 
@@ -40,6 +40,10 @@ method.log = function(candle) {
   log.debug('calculated RSI properties for candle:');
   log.debug('\t', 'rsi:', rsi.result.toFixed(digits));
   log.debug('\t', 'price:', candle.close.toFixed(digits));
+  log.debug('\t', 'prices:', this.indicators.dct.prices);
+  log.debug('\t', 'dct:', this.indicators.dct.prices);
+
+
 }
 
 method.check = function() {

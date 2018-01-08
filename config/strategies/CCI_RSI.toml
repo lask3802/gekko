@@ -1,0 +1,24 @@
+
+[cciMaster]
+up = 350
+down = -350
+stun = 10
+cooldownUp = 70
+cooldownDown = -70
+persistence = 20
+constant = 0.015
+history = 480
+
+
+[cciSlave]
+up = 100
+down = -100
+persistence = 0
+constant = 0.015
+history = 90
+
+[rsi]
+interval = 6
+low = 33
+high = 66
+persistence = 1

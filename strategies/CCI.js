@@ -59,7 +59,7 @@ method.log = function() {
 method.check = function(candle) {
 
   var price = candle.close;
-
+  this.lastPrice = price;
     this.age++;
     var cci = this.indicators.cci;
 
