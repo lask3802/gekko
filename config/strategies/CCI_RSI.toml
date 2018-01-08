@@ -3,8 +3,8 @@
 up = 350
 down = -350
 stun = 10
-cooldownUp = 70
-cooldownDown = -70
+cooldownUp = 100
+cooldownDown = -100
 persistence = 20
 constant = 0.015
 history = 480

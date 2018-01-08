@@ -175,12 +175,6 @@ method.cciWorker = function (candle) {
 
   var cci = this.indicators.cciSlave;
 
-  if(this.indicators.cciMaster.result>this.pump || this.indicators.cciMaster.result<this.dump){
-    this.persisted = 3;
-  }else{
-    this.persisted = 0;
-  }
-
   if (typeof(cci.result) == 'number') {
 
     // overbought?
@@ -189,6 +183,7 @@ method.cciWorker = function (candle) {
       this.trend.adviced = true;
       this.trend.duration++;
       this.advice('short');
+      log.debug('cci short:',cci.result);
     } else if (cci.result >= this.uplevel && this.trend.direction != 'overbought') {
       this.trend.duration = 1;
       this.trend.direction = 'overbought';
@@ -197,6 +192,7 @@ method.cciWorker = function (candle) {
       if (this.persisted == 0) {
         this.trend.adviced = true;
         this.advice('short');
+        log.debug('cci short:',cci.result);
       }
     } else if (cci.result >= this.uplevel) {
       this.trend.duration++;
@@ -207,6 +203,7 @@ method.cciWorker = function (candle) {
       this.trend.adviced = true;
       this.trend.duration++;
       this.advice('long');
+      log.debug('cci long:',cci.result);
     } else if (cci.result <= this.downlevel && this.trend.direction != 'oversold') {
       this.trend.duration = 1;
       this.trend.direction = 'oversold';
@@ -215,6 +212,7 @@ method.cciWorker = function (candle) {
       if (this.persisted == 0) {
         this.trend.adviced = true;
         this.advice('long');
+        log.debug('cci long:',cci.result);
       }
     } else if (cci.result <= this.downlevel) {
       this.trend.duration++;
