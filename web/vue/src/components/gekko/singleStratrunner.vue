@@ -5,6 +5,8 @@
       p Gekko doesn't know what strat runner this is...
     div(v-if='data')
       h2.contain Strat runner
+      .contain
+        button(v-on:click="killGekko") Stop this strat runner
       .grd.contain
         .grd-row
           .grd-row-col-3-6
@@ -209,6 +211,9 @@ export default {
           return c;
         });
       })
+    },
+    killGekko: function(){
+      post('killGekko', {"id": this.data.id}, false);
     }
   }
 }
