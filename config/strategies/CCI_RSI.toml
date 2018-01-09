@@ -9,6 +9,11 @@ persistence = 20
 constant = 0.015
 history = 480
 
+[bbands]
+TimePeriod = 50
+NbDevUp = 2.25
+NbDevDn = 2
+factor = 0.3
 
 [cciSlave]
 up = 100

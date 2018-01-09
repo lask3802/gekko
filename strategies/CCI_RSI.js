@@ -47,6 +47,7 @@ method.init = function() {
   this.cooldownPersistence = this.settings.cciMaster.persistence;
   this.cooldown = 0;
 
+  this.addIndicator("bb","BB",this.settings.bbands);
   this.addIndicator('cciMaster', 'CCI', this.settings.cciMaster);
   this.addIndicator('rsi', 'RSI', this.settings.rsi);
   this.addIndicator('cciSlave', 'CCI', this.settings.cciSlave);
@@ -68,6 +69,14 @@ method._log = function(){
 }
 
 method.check = function(candle) {
+  this.rsiWorker(candle);
+};
+
+method.bbMasterStratrgy = function (candle) {
+
+}
+
+method.cciRsiStrategy = function(candle){
   var cciMaster = this.indicators.cciMaster.result;
   this.age++
   if(cciMaster === false){
@@ -75,14 +84,14 @@ method.check = function(candle) {
     return;
   }
   if(cciMaster > this.pump || cciMaster<this.dump){
-      //dont work when pump/dump start
-      if(this.worker === this.rsiWorker) {
-        this.stun = this.settings.cciMaster.stun;
-        this.cciWorker(candle);
-      }
-      this.worker = this.cciWorker;
-      log.debug("cci take over, cciMaster:",cciMaster, "age:",this.age,"stun:",this.stun);
-      this.cooldown = 0;
+    //dont work when pump/dump start
+    if(this.worker === this.rsiWorker) {
+      this.stun = this.settings.cciMaster.stun;
+      this.cciWorker(candle);
+    }
+    this.worker = this.cciWorker;
+    log.debug("cci take over, cciMaster:",cciMaster, "age:",this.age,"stun:",this.stun);
+    this.cooldown = 0;
 
 
   }
@@ -106,11 +115,12 @@ method.check = function(candle) {
   this.worker(candle);
 };
 
-method.rsiWorker = function(candle, master){
+method.rsiWorker = function(candle){
 
   var rsi = this.indicators.rsi;
   var rsiVal = rsi.result;
 
+  var bb = this.indicators.bb;
   if(rsiVal > this.settings.rsi.high) {
 
     // new trend detected
@@ -156,6 +166,11 @@ method.rsiWorker = function(candle, master){
 
     if(this.trend.persisted && !this.trend.adviced) {
       this.trend.adviced = true;
+      //log.debug(candle.close, bb.middle);
+      if(candle.close > (bb.middle - bb.lower)*this.settings.bbands.factor+bb.middle ){
+        this.advice();
+        return;
+      }
       this.advice('long');
     } else
       this.advice();
