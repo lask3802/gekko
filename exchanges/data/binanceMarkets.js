@@ -38,6 +38,7 @@ module.exports = {
     "ADX",
     "AION",
     "AMB",
+    "APPC",
     "ARK",
     "ARN",
     "BAT",
@@ -52,6 +53,7 @@ module.exports = {
     "DASH",
     "DGD",
     "DLT",
+    "EDO",
     "ELF",
     "ENG",
     "ENJ",
@@ -66,11 +68,13 @@ module.exports = {
     "LEND",
     "LRC",
     "LSK",
+    "LUN",
     "MANA",
     "MDA",
     "MOD",
     "MTH",
     "MTL",
+    "NAV",
     "NEBL",
     "OST",
     "POE",
@@ -84,10 +88,12 @@ module.exports = {
     "SUB",
     "TNB",
     "TNT",
+    "TRIG",
     "TRX",
     "VIB",
     "WABI",
     "WAVES",
+    "WINGS",
     "XLM",
     "XMR",
     "XRP",
@@ -130,9 +136,9 @@ module.exports = {
         "BNB"
       ],
       "minimalOrder": {
-        "amount": 1,
-        "price": 1e-8,
-        "order": 0.001
+        "amount": 0.01,
+        "price": 1e-7,
+        "order": 0.002
       }
     },
     {
@@ -143,7 +149,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -154,7 +160,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -165,7 +171,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -187,7 +193,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -198,7 +204,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -209,7 +215,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -220,7 +226,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -242,7 +248,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -253,7 +259,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -264,7 +270,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -341,7 +347,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -418,7 +424,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -451,7 +457,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -506,7 +512,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -528,7 +534,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -550,7 +556,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.001,
         "price": 0.000001,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -572,7 +578,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -583,7 +589,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -605,7 +611,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.001,
         "price": 0.000001,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -627,7 +633,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -638,7 +644,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -660,7 +666,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -693,7 +699,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -726,7 +732,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -759,7 +765,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -775,13 +781,46 @@ module.exports = {
     },
     {
       "pair": [
+        "BNB",
+        "APPC"
+      ],
+      "minimalOrder": {
+        "amount": 0.01,
+        "price": 0.00001,
+        "order": 1
+      }
+    },
+    {
+      "pair": [
+        "BTC",
+        "APPC"
+      ],
+      "minimalOrder": {
+        "amount": 1,
+        "price": 1e-8,
+        "order": 0.002
+      }
+    },
+    {
+      "pair": [
+        "ETH",
+        "APPC"
+      ],
+      "minimalOrder": {
+        "amount": 1,
+        "price": 1e-7,
+        "order": 0.01
+      }
+    },
+    {
+      "pair": [
         "BTC",
         "ARK"
       ],
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -803,7 +842,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -825,7 +864,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -847,7 +886,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -902,7 +941,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.001,
         "price": 0.000001,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -935,7 +974,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -955,8 +994,8 @@ module.exports = {
         "BNB"
       ],
       "minimalOrder": {
-        "amount": 1,
-        "price": 1e-8,
+        "amount": 0.01,
+        "price": 0.000001,
         "order": 0.01
       }
     },
@@ -968,7 +1007,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -990,7 +1029,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1012,7 +1051,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1045,7 +1084,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1067,7 +1106,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1100,7 +1139,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1133,7 +1172,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1155,7 +1194,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.001,
         "price": 0.000001,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1177,7 +1216,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.001,
         "price": 0.000001,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1210,7 +1249,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1232,7 +1271,29 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
+      }
+    },
+    {
+      "pair": [
+        "BTC",
+        "EDO"
+      ],
+      "minimalOrder": {
+        "amount": 0.01,
+        "price": 1e-7,
+        "order": 0.002
+      }
+    },
+    {
+      "pair": [
+        "ETH",
+        "EDO"
+      ],
+      "minimalOrder": {
+        "amount": 0.01,
+        "price": 0.000001,
+        "order": 0.01
       }
     },
     {
@@ -1243,7 +1304,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1265,7 +1326,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1287,7 +1348,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1309,7 +1370,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1331,7 +1392,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1353,7 +1414,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1375,7 +1436,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1397,7 +1458,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1419,7 +1480,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1441,7 +1502,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1463,7 +1524,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1485,7 +1546,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1507,7 +1568,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1540,7 +1601,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1562,7 +1623,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1584,7 +1645,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1617,7 +1678,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1667,12 +1728,34 @@ module.exports = {
     {
       "pair": [
         "BTC",
+        "LUN"
+      ],
+      "minimalOrder": {
+        "amount": 0.01,
+        "price": 1e-7,
+        "order": 0.002
+      }
+    },
+    {
+      "pair": [
+        "ETH",
+        "LUN"
+      ],
+      "minimalOrder": {
+        "amount": 0.01,
+        "price": 0.000001,
+        "order": 0.01
+      }
+    },
+    {
+      "pair": [
+        "BTC",
         "MANA"
       ],
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1688,13 +1771,24 @@ module.exports = {
     },
     {
       "pair": [
+        "BNB",
+        "MCO"
+      ],
+      "minimalOrder": {
+        "amount": 0.01,
+        "price": 0.00001,
+        "order": 1
+      }
+    },
+    {
+      "pair": [
         "BTC",
         "MDA"
       ],
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1716,7 +1810,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1738,7 +1832,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1760,13 +1854,46 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
       "pair": [
         "ETH",
         "MTL"
+      ],
+      "minimalOrder": {
+        "amount": 0.01,
+        "price": 0.000001,
+        "order": 0.01
+      }
+    },
+    {
+      "pair": [
+        "BNB",
+        "NAV"
+      ],
+      "minimalOrder": {
+        "amount": 0.01,
+        "price": 0.00001,
+        "order": 1
+      }
+    },
+    {
+      "pair": [
+        "BTC",
+        "NAV"
+      ],
+      "minimalOrder": {
+        "amount": 0.01,
+        "price": 1e-7,
+        "order": 0.002
+      }
+    },
+    {
+      "pair": [
+        "ETH",
+        "NAV"
       ],
       "minimalOrder": {
         "amount": 0.01,
@@ -1793,7 +1920,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1837,7 +1964,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1859,7 +1986,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1881,7 +2008,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1914,7 +2041,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1936,7 +2063,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -1969,7 +2096,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -2002,7 +2129,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -2035,7 +2162,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -2057,7 +2184,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -2079,7 +2206,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -2090,7 +2217,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -2112,7 +2239,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -2134,7 +2261,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -2156,7 +2283,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -2172,13 +2299,46 @@ module.exports = {
     },
     {
       "pair": [
+        "BNB",
+        "TRIG"
+      ],
+      "minimalOrder": {
+        "amount": 0.01,
+        "price": 0.00001,
+        "order": 1
+      }
+    },
+    {
+      "pair": [
+        "BTC",
+        "TRIG"
+      ],
+      "minimalOrder": {
+        "amount": 0.01,
+        "price": 1e-7,
+        "order": 0.002
+      }
+    },
+    {
+      "pair": [
+        "ETH",
+        "TRIG"
+      ],
+      "minimalOrder": {
+        "amount": 0.01,
+        "price": 0.000001,
+        "order": 0.01
+      }
+    },
+    {
+      "pair": [
         "BTC",
         "TRX"
       ],
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -2200,7 +2360,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -2222,7 +2382,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -2255,7 +2415,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -2288,7 +2448,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -2299,6 +2459,28 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
+        "order": 0.01
+      }
+    },
+    {
+      "pair": [
+        "BTC",
+        "WINGS"
+      ],
+      "minimalOrder": {
+        "amount": 1,
+        "price": 1e-8,
+        "order": 0.002
+      }
+    },
+    {
+      "pair": [
+        "ETH",
+        "WINGS"
+      ],
+      "minimalOrder": {
+        "amount": 1,
+        "price": 1e-7,
         "order": 0.01
       }
     },
@@ -2332,7 +2514,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -2354,7 +2536,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.001,
         "price": 0.000001,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -2376,7 +2558,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -2398,7 +2580,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -2420,7 +2602,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -2453,7 +2635,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {
@@ -2475,7 +2657,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.001,
         "price": 0.000001,
-        "order": 0.001
+        "order": 0.002
       }
     },
     {

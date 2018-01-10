@@ -69,7 +69,7 @@ method._log = function(){
 }
 
 method.check = function(candle) {
-  this.rsiWorker(candle);
+  this.cciRsiStrategy(candle);
 };
 
 method.bbMasterStratrgy = function (candle) {
@@ -115,12 +115,17 @@ method.cciRsiStrategy = function(candle){
   this.worker(candle);
 };
 
+function bbandTest(candle) {
+  var bb = this.indicators.bb;
+  return candle.close > (bb.middle - bb.lower) * this.settings.bbands.factor + bb.middle;
+}
+
 method.rsiWorker = function(candle){
 
   var rsi = this.indicators.rsi;
   var rsiVal = rsi.result;
 
-  var bb = this.indicators.bb;
+
   if(rsiVal > this.settings.rsi.high) {
 
     // new trend detected
@@ -167,7 +172,7 @@ method.rsiWorker = function(candle){
     if(this.trend.persisted && !this.trend.adviced) {
       this.trend.adviced = true;
       //log.debug(candle.close, bb.middle);
-      if(candle.close > (bb.middle - bb.lower)*this.settings.bbands.factor+bb.middle ){
+      if(bbandTest.call(this, candle) ){
         this.advice();
         return;
       }
@@ -217,8 +222,10 @@ method.cciWorker = function (candle) {
     } else if (cci.result <= this.downlevel && (this.trend.persisted || this.persisted == 0) && !this.trend.adviced && this.trend.direction == 'oversold') {
       this.trend.adviced = true;
       this.trend.duration++;
-      this.advice('long');
-      log.debug('cci long:',cci.result);
+      if(bbandTest.call(this, candle)){
+        this.advice();
+      }else {this.advice('long');
+      log.debug('cci long:',cci.result);}
     } else if (cci.result <= this.downlevel && this.trend.direction != 'oversold') {
       this.trend.duration = 1;
       this.trend.direction = 'oversold';
@@ -226,8 +233,10 @@ method.cciWorker = function (candle) {
       this.trend.adviced = false;
       if (this.persisted == 0) {
         this.trend.adviced = true;
-        this.advice('long');
-        log.debug('cci long:',cci.result);
+        if(bbandTest.call(this, candle)){
+          this.advice();
+        }else {this.advice('long');
+        log.debug('cci long:',cci.result);}
       }
     } else if (cci.result <= this.downlevel) {
       this.trend.duration++;
