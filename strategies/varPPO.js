@@ -20,7 +20,7 @@ method.init = function() {
    persisted: false,
    adviced: false
   };
-
+  log.debug(config);
   this.requiredHistory = this.tradingAdvisor.historySize;
 
   // define the indicators we need

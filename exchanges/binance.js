@@ -154,9 +154,9 @@ Trader.prototype.getPortfolio = function(callback) {
   util.retryCustom(retryForever, _.bind(handler, this), _.bind(setBalance, this));
 };
 
-// This uses the base maker fee (0.1%), and does not account for BNB discounts
+// Apply BNB discount (0.05%)
 Trader.prototype.getFee = function(callback) {
-  var makerFee = 0.1;
+  var makerFee = 0.05;
   callback(undefined, makerFee / 100);
 };
 
@@ -252,7 +252,7 @@ Trader.prototype.getOrder = function(order, callback) {
 
     var price = parseFloat(data.price);
     var amount = parseFloat(data.executedQty);
-    var date = moment.unix(data.time);
+    var date = moment.unix(data.time/1000);
 
     callback(undefined, { price, amount, date });
   }.bind(this);

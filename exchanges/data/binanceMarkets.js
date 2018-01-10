@@ -91,6 +91,7 @@ module.exports = {
     "TRIG",
     "TRX",
     "VIB",
+    "VIBE",
     "WABI",
     "WAVES",
     "WINGS",
@@ -2383,6 +2384,28 @@ module.exports = {
         "amount": 1,
         "price": 1e-8,
         "order": 0.002
+      }
+    },
+    {
+      "pair": [
+        "BTC",
+        "VIBE"
+      ],
+      "minimalOrder": {
+        "amount": 1,
+        "price": 1e-8,
+        "order": 0.002
+      }
+    },
+    {
+      "pair": [
+        "ETH",
+        "VIBE"
+      ],
+      "minimalOrder": {
+        "amount": 1,
+        "price": 1e-7,
+        "order": 0.01
       }
     },
     {
