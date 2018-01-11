@@ -139,7 +139,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -150,7 +150,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -161,7 +161,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -172,7 +172,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -194,7 +194,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -205,7 +205,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -216,7 +216,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -227,7 +227,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -249,7 +249,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -258,9 +258,9 @@ module.exports = {
         "WTC"
       ],
       "minimalOrder": {
-        "amount": 1,
-        "price": 1e-8,
-        "order": 0.002
+        "amount": 0.01,
+        "price": 1e-7,
+        "order": 0.001
       }
     },
     {
@@ -271,7 +271,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -348,7 +348,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -425,7 +425,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -458,7 +458,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -513,7 +513,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -535,7 +535,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -557,7 +557,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.001,
         "price": 0.000001,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -579,7 +579,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -590,7 +590,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -612,7 +612,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.001,
         "price": 0.000001,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -634,7 +634,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -645,7 +645,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -667,7 +667,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -700,7 +700,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -733,7 +733,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -766,7 +766,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -799,7 +799,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -821,7 +821,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -843,7 +843,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -865,7 +865,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -887,7 +887,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -942,7 +942,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.001,
         "price": 0.000001,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -975,7 +975,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1008,7 +1008,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1030,7 +1030,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1052,7 +1052,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1085,7 +1085,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1107,7 +1107,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1140,7 +1140,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1173,7 +1173,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1195,7 +1195,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.001,
         "price": 0.000001,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1217,7 +1217,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.001,
         "price": 0.000001,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1250,7 +1250,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1272,7 +1272,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1283,7 +1283,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1305,7 +1305,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1327,7 +1327,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1349,7 +1349,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1371,7 +1371,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1393,7 +1393,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1415,7 +1415,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1437,7 +1437,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1459,7 +1459,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1481,7 +1481,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1503,7 +1503,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1525,7 +1525,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1547,7 +1547,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1569,7 +1569,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1602,7 +1602,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1624,7 +1624,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1646,7 +1646,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1679,7 +1679,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1734,7 +1734,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1756,7 +1756,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1789,7 +1789,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1811,7 +1811,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1833,7 +1833,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1855,7 +1855,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1888,7 +1888,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1921,7 +1921,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1965,7 +1965,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -1987,7 +1987,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2009,7 +2009,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2042,7 +2042,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2064,7 +2064,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2097,7 +2097,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2130,7 +2130,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2163,7 +2163,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2185,7 +2185,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2207,7 +2207,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2218,7 +2218,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2240,7 +2240,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2262,7 +2262,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2284,7 +2284,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2317,7 +2317,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2339,7 +2339,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2361,7 +2361,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2383,7 +2383,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2394,7 +2394,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2438,7 +2438,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2471,7 +2471,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 1e-7,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2493,7 +2493,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2537,7 +2537,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2559,7 +2559,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.001,
         "price": 0.000001,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2581,7 +2581,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2603,7 +2603,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2625,7 +2625,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.01,
         "price": 0.000001,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2658,7 +2658,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 1,
         "price": 1e-8,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
@@ -2680,7 +2680,7 @@ module.exports = {
       "minimalOrder": {
         "amount": 0.001,
         "price": 0.000001,
-        "order": 0.002
+        "order": 0.001
       }
     },
     {
